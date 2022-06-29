@@ -1,0 +1,2 @@
+#!/bin/bash
+texcount $1  | awk -F+ '/ection: '"$2"'/{print $1+$2+$3,"words"}' 

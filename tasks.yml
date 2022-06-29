@@ -1,0 +1,30 @@
+#uncomment the tstart below to print relative time in months since project start (Note in that case, slots may only be given in +m +d format)
+tstart: "2020-01-01"
+Tasks:
+    First task:
+        color: "#004da2"
+        periods: 
+            - ["2020-01-01", "+180d"]
+            - ["+10m", "2020-12-31"]
+    Second task:
+        color: "tab:orange"
+        longname: "An optional longer name possibly\n with a line break"
+        periods:
+            - ["2020-07-01","2020-09-30"]
+    Third task:
+        color: "tab:green"
+        periods:
+            - ["2020-01-01","2021-11-30"]
+    Fourth task:
+        color: "tab:blue"
+        periods:
+            - ["2020-06-01","2021-12-30"]
+Milestones:
+    M1 First Milestone:
+        color: "tab:blue"
+        epoch: "2020-05-15"
+        textshift: "-1m" # You may give this parameter to shift the text of the label horizontally
+    M2:
+        longname: "M2 longer milestone name"
+        color: "tab:blue"
+        epoch: "2020-05-30"
